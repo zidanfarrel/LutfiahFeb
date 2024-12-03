@@ -89,10 +89,11 @@ function fungsigamau(){
       tekskalimatakhir = "Yaudah kalo kamu gamau,<br>biar aku aja yang jadi<br>pacar kamu saoal nya udah nungguin sekian tahun lama nyaaaaaaaaa, hehe ";
 }
 
-function menuju(){
-    const url = 
-	    "https://api.whatsapp.com/send/?phone=6287779740383&text&type=phone_number&app_absent=0";
-    window.open(url);
+function menuju() {
+    const nomor = "6287779740383"; // Nomor tujuan
+    const pesan = encodeURIComponent("Halo Sayangkuu :)"); // Teks pesan (opsional)
+    const url = "https://api.whatsapp.com/send/?phone=6287779740383&text=&type=phone_number&app_absent=0";
+    window.open(url, "_blank"); // Membuka di tab baru
 }
 
 teksjudulakhir2 = "Loveeee uuuu moreeee sayangggg";
